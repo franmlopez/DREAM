@@ -156,10 +156,10 @@ def dream_to_fit(x, exp_caf_congr, exp_caf_incongr, exp_cdf_congr, exp_cdf_incon
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--run', action='store_true')
-    parser.add_argument('--fit', action='store_true')
-    parser.add_argument('--manual', action='store_true')
-    parser.add_argument('--auto', action='store_true')
+    parser.add_argument('-r','--run', action='store_true')
+    parser.add_argument('-f','--fit', action='store_true')
+    parser.add_argument('-m','--manual', action='store_true')
+    parser.add_argument('-a','--auto', action='store_true')
     parser.add_argument('--save_name', type=str, default='')
     parser.add_argument('--data_file', type=str, default=None)
     parser.add_argument('--params', nargs='+', type=float, default=None)
